@@ -26,7 +26,9 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -34,6 +36,19 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  background-color: darkorange; /* Hintergrundfarbe hinzufügen, um den Text hervorzuheben */
+  padding: 10px; /* Einen Innenabstand hinzufügen */
+}
+
+h2 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  background-color: #7bd1f8; /* Hintergrundfarbe hinzufügen */
+  color: white; /* Schriftfarbe auf weiß setzen, um den Kontrast zu erhöhen */
+  padding: 10px; /* Einen Innenabstand hinzufügen, um den Text vom Hintergrund zu trennen */
 }
 
 #app {
@@ -94,4 +109,17 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+  /* Die bestehenden CSS-Regeln bleiben unverändert */
+
+  /* Hinzufügen einer Regel für das zweite <article> */
+  .article2 {
+    /* Hintergrundfarbe für das zweite <article> */
+    color: white; /* Schriftfarbe auf weiß setzen, um den Kontrast zu erhöhen */
+    padding: 10px; /* Einen Innenabstand hinzufügen, um den Text vom Hintergrund zu trennen */
+  }
+
+  .article2 {
+    background-color: red;
+  }
+
 }
